@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos"
+    xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Fecha="2022-11-04T17:33:17" FormaPago="01" MetodoPago="PUE" NoCertificado="30001000000400002321" Certificado="" Sello="" CondicionesDePago="30 días" SubTotal="1000.00" Total="1160.00" Moneda="MXN" TipoDeComprobante="I" Exportacion="01" LugarExpedicion="83000">
+    <cfdi:Emisor Rfc="FUNK671228PH6" Nombre="KARLA FUENTE NOLASCO" RegimenFiscal="612"/>
+    <cfdi:Receptor Rfc="AAQM610917QJA" Nombre="CARLOS FERNANDO Virtual SANCHEZ" DomicilioFiscalReceptor="64108" RegimenFiscalReceptor="612" UsoCFDI="G01"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="78101802\" NoIdentificacion="A1B2C3D4" Cantidad="1" ClaveUnidad="E48" Unidad="SER" Descripcion="Servicios de traslado vía autotransporte" ValorUnitario="1000.00" Importe="1000.00" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="1000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="160.00"/>
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="160.00">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="1000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="160.00"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+</cfdi:Comprobante>

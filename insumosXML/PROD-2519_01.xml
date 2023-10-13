@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante Version="4.0" Folio="ACOB00081" Fecha="2023-01-03T16:23:44" Sello=""
+  NoCertificado="30001000000400002495" Certificado="" TipoDeComprobante="P" Exportacion="01"
+  SubTotal="0" Moneda="XXX" Total="0" LugarExpedicion="90901"
+  xmlns:pago20="http://www.sat.gob.mx/Pagos20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:dvz="http://www.diverza.com/ns/addenda/diverza/1"
+  xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/Pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd"
+  xmlns:cfdi="http://www.sat.gob.mx/cfd/4">
+  <cfdi:Emisor RegimenFiscal="601" Nombre="AUCHAN COMERCIALIZADORA MEXICANA" Rfc="AAA010101AAA"/>
+  <cfdi:Receptor Rfc="AAQM610917QJA" Nombre="CARLOS FERNANDO Virtual SANCHEZ"
+    DomicilioFiscalReceptor="64108" RegimenFiscalReceptor="612" UsoCFDI="CP01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ObjetoImp="01" Importe="0" ValorUnitario="0" Descripcion="Pago" ClaveUnidad="ACT"
+      Cantidad="1" ClaveProdServ="84111506"/>
+  </cfdi:Conceptos>
+  <cfdi:Complemento>
+    <pago20:Pagos Version="2.0" xmlns:pago20="http://www.sat.gob.mx/Pagos20"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI"
+      xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos"
+      xmlns:catPagos="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Pagos">
+      <pago20:Totales MontoTotalPagos="54508444.10" TotalTrasladosBaseExento="2767558.28"/>
+      <pago20:Pago FechaPago="2022-12-16T12:00:00" FormaDePagoP="03" MonedaP="USD"
+        TipoCambioP="19.695500" Monto="2767558.28" RfcEmisorCtaBen="BBA830831LJ2"
+        CtaBeneficiario="0169439935">
+        <pago20:DoctoRelacionado IdDocumento="62299227-8ebc-4670-8b08-efb97e105fa1" Folio="0000130"
+          Serie="CO" MonedaDR="USD" EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="2767558.28"
+          ImpPagado="2767558.28" ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+          <pago20:ImpuestosDR>
+            <pago20:TrasladosDR>
+              <pago20:TrasladoDR BaseDR="54508444.10" ImpuestoDR="002" TipoFactorDR="Exento"/>
+            </pago20:TrasladosDR>
+          </pago20:ImpuestosDR>
+        </pago20:DoctoRelacionado>
+        <pago20:ImpuestosP>
+          <pago20:TrasladosP>
+            <pago20:TrasladoP BaseP="54508444.10" ImpuestoP="002" TipoFactorP="Exento"/>
+          </pago20:TrasladosP>
+        </pago20:ImpuestosP>
+      </pago20:Pago>
+    </pago20:Pagos>
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <dvz:diverza
+      schemaLocation="http://www.diverza.com/ns/addenda/diverza/1 http://www.diverza.com/schema/xsd/Addenda_Diverza_v1.1.xsd"
+      version="1.1" xmlns:dvz="http://www.sat.gob.mx/cfd/4">
+      <dvz:complemento>
+        <dvz:datosExtra atributo="RefId" valor="2125640112544"/>
+      </dvz:complemento>
+    </dvz:diverza>
+  </cfdi:Addenda>
+</cfdi:Comprobante>

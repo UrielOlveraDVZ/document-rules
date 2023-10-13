@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:pago20="http://www.sat.gob.mx/Pagos20"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/Pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd"
+    Version="4.0" Serie="ZCCP" Folio="2125" Fecha="2023-01-16T18:13:38" Sello=""
+    NoCertificado="30001000000400002495" Certificado="" SubTotal="0" Moneda="XXX" Total="0"
+    TipoDeComprobante="P" Exportacion="01" LugarExpedicion="64753">
+    <cfdi:CfdiRelacionados TipoRelacion="01">
+        <cfdi:CfdiRelacionado UUID="f9bc548a-0efe-44f3-a53d-b92b54d25764"/>
+        <cfdi:CfdiRelacionado UUID="f9bc548a-0efe-44f3-a53d-b92b54d12345"/>
+    </cfdi:CfdiRelacionados>
+    <cfdi:CfdiRelacionados TipoRelacion="04">
+        <cfdi:CfdiRelacionado UUID="5FB2822E-396D-4725-8521-CDC4BDD20CCF"/>
+    </cfdi:CfdiRelacionados>
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="AUCHAN COMERCIALIZADORA MEXICANA" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="AME970109GW0" Nombre="AUTOZONE DE MEXICO" DomicilioFiscalReceptor="64753"
+        RegimenFiscalReceptor="601" UsoCFDI="CP01"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago"
+            ValorUnitario="0" Importe="0" ObjetoImp="01"/>
+    </cfdi:Conceptos>
+    <cfdi:Complemento>
+        <pago20:Pagos Version="2.0">
+            <pago20:Totales TotalRetencionesIVA="4008.49" TotalRetencionesISR="18355.30"
+                TotalTrasladosBaseIVA16="843820.25" TotalTrasladosImpuestoIVA16="135011.16"
+                TotalTrasladosBaseIVA8="3636.77" TotalTrasladosImpuestoIVA8="290.94"
+                MontoTotalPagos="989029.70"/> <!-- La suma de Totales debería ser 989029.69 -->
+            <pago20:Pago FechaPago="2022-11-03T12:00:00" FormaDePagoP="02" MonedaP="USD"
+                TipoCambioP="19.45" Monto="26001.56" NumOperacion="221101010"
+                RfcEmisorCtaBen="BBA830831LJ2" CtaBeneficiario="012580001071174508">
+                <pago20:DoctoRelacionado IdDocumento="9f33a65d-5f5c-4779-8e71-7bcc955dc634"
+                    Serie="JHFE" Folio="JHFE7540544793061900" MonedaDR="USD" EquivalenciaDR="1"
+                    NumParcialidad="1" ImpSaldoAnt="26001.56" ImpPagado="26001.56"
+                    ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="22415.14" ImpuestoDR="002"
+                                TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="3586.42"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:ImpuestosP>
+                    <pago20:TrasladosP>
+                        <pago20:TrasladoP BaseP="22415.14" ImpuestoP="002" TipoFactorP="Tasa"
+                            TasaOCuotaP="0.160000" ImporteP="3586.42"/>
+                    </pago20:TrasladosP>
+                </pago20:ImpuestosP>
+            </pago20:Pago>
+            <pago20:Pago FechaPago="2022-11-13T12:00:00" FormaDePagoP="02" MonedaP="MXN"
+                TipoCambioP="1" Monto="35825.78" RfcEmisorCtaBen="BBA830831LJ2"
+                CtaBeneficiario="012580001071174508">
+                <pago20:DoctoRelacionado IdDocumento="2ff5ea9e-df31-41da-b47d-69ac82aef93a"
+                    MonedaDR="MXN" EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="35825.78"
+                    ImpPagado="35825.78" ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:RetencionesDR>
+                            <pago20:RetencionDR BaseDR="37579.50" ImpuestoDR="001"
+                                TipoFactorDR="Tasa" TasaOCuotaDR="0.100000" ImporteDR="3757.95"/>
+                            <pago20:RetencionDR BaseDR="37579.50" ImpuestoDR="002"
+                                TipoFactorDR="Tasa" TasaOCuotaDR="0.106667" ImporteDR="4008.49"/>
+                        </pago20:RetencionesDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="37579.50" ImpuestoDR="002"
+                                TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="6012.72"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:ImpuestosP>
+                    <pago20:RetencionesP>
+                        <pago20:RetencionP ImpuestoP="001" ImporteP="3757.95"/>
+                        <pago20:RetencionP ImpuestoP="002" ImporteP="4008.49"/>
+                    </pago20:RetencionesP>
+                    <pago20:TrasladosP>
+                        <pago20:TrasladoP BaseP="37579.50" ImpuestoP="002" TipoFactorP="Tasa"
+                            TasaOCuotaP="0.160000" ImporteP="6012.72"/>
+                    </pago20:TrasladosP>
+                </pago20:ImpuestosP>
+            </pago20:Pago>
+            <pago20:Pago FechaPago="2022-12-03T12:00:00" FormaDePagoP="02" MonedaP="MXN"
+                TipoCambioP="1" Monto="9553.00" RfcEmisorCtaBen="BBA830831LJ2"
+                CtaBeneficiario="012580001071174508">
+                <pago20:DoctoRelacionado IdDocumento="cc4e37c9-33f7-4617-aeab-6dcbc01e9a2c"
+                    Serie="JHFI" Folio="JHFI7048932776204901" MonedaDR="MXN" EquivalenciaDR="1"
+                    NumParcialidad="1" ImpSaldoAnt="444.44" ImpPagado="444.44"
+                    ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="383.14" ImpuestoDR="002" TipoFactorDR="Tasa"
+                                TasaOCuotaDR="0.160000" ImporteDR="61.30"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:DoctoRelacionado IdDocumento="6ec62330-41fc-4f14-8301-58d263bd0339"
+                    Serie="JHFE" Folio="JHFE7236545121210500" MonedaDR="MXN" EquivalenciaDR="1"
+                    NumParcialidad="2" ImpSaldoAnt="1314.57" ImpPagado="1314.57"
+                    ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="1133.25" ImpuestoDR="002" TipoFactorDR="Tasa"
+                                TasaOCuotaDR="0.160000" ImporteDR="181.32"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:DoctoRelacionado IdDocumento="ca7e0e50-5cb4-478f-9479-344e340dc932"
+                    Serie="JHFE" Folio="JHFE7504545148210501" MonedaDR="MXN" EquivalenciaDR="1"
+                    NumParcialidad="1" ImpSaldoAnt="4426.61" ImpPagado="4426.61"
+                    ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="3816.04" ImpuestoDR="002" TipoFactorDR="Tasa"
+                                TasaOCuotaDR="0.160000" ImporteDR="610.57"/>
+                            <pago20:TrasladoDR BaseDR="3636.77" ImpuestoDR="002" TipoFactorDR="Tasa"
+                                TasaOCuotaDR="0.080000" ImporteDR="290.94"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:DoctoRelacionado IdDocumento="43a19f8f-2ec2-4300-b51b-7a047d754b28"
+                    Serie="JHFE" Folio="JHFE7247935859213501" MonedaDR="MXN" EquivalenciaDR="1"
+                    NumParcialidad="1" ImpSaldoAnt="3367.38" ImpPagado="3367.38"
+                    ImpSaldoInsoluto="0.00" ObjetoImpDR="03">
+                </pago20:DoctoRelacionado>
+                <pago20:ImpuestosP>
+                    <pago20:TrasladosP>
+                        <pago20:TrasladoP BaseP="5332.43" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.160000" ImporteP="853.19"/>
+                        <pago20:TrasladoP BaseP="3636.77" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.080000" ImporteP="290.94"/>
+                    </pago20:TrasladosP>
+                </pago20:ImpuestosP>
+            </pago20:Pago>
+            <pago20:Pago FechaPago="2022-11-23T12:00:00" FormaDePagoP="02" MonedaP="USD"
+                TipoCambioP="20.37" Monto="21498.31" RfcEmisorCtaBen="BBA830831LJ2"
+                CtaBeneficiario="012580001071174508">
+                <pago20:DoctoRelacionado IdDocumento="8191c7c1-acdc-41ab-9eaa-c3e304026344"
+                    Serie="JHFE" Folio="JHFE7772545161210501" MonedaDR="MXN" EquivalenciaDR="20.37"
+                    NumParcialidad="1" ImpSaldoAnt="500000.00" ImpPagado="437920.57"
+                    ImpSaldoInsoluto="62079.43" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:RetencionesDR>
+                            <pago20:RetencionDR BaseDR="364933.85" ImpuestoDR="001"
+                                TipoFactorDR="Tasa" TasaOCuotaDR="0.040000" ImporteDR="14597.35"/>
+                        </pago20:RetencionesDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="364933.85" ImpuestoDR="002"
+                                TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="58389.42"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:ImpuestosP>
+                    <pago20:RetencionesP>
+                        <pago20:RetencionP ImpuestoP="001" ImporteP="716.61"/>
+                    </pago20:RetencionesP>
+                    <pago20:TrasladosP>
+                        <pago20:TrasladoP BaseP="17915.26" ImpuestoP="002" TipoFactorP="Tasa"
+                            TasaOCuotaP="0.160000" ImporteP="2866.44"/>
+                    </pago20:TrasladosP>
+                </pago20:ImpuestosP>
+            </pago20:Pago>
+        </pago20:Pagos>
+    </cfdi:Complemento>
+    <cfdi:Addenda>
+        <dvz:diverza version="1.1" xmlns:dvz="http://www.diverza.com/ns/addenda/diverza/1"
+            xsi:schemaLocation="http://www.diverza.com/ns/addenda/diverza/1 http://www.diverza.com/schema/xsd/Addenda_Diverza_v1.1.xsd">
+            <dvz:complemento>
+                <dvz:datosExtra atributo="RefId" valor="CP2022NOV01"/>
+            </dvz:complemento>
+        </dvz:diverza>
+    </cfdi:Addenda>
+</cfdi:Comprobante>

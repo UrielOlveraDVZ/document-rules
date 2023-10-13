@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd"
+    Version="4.0" Serie="CFDI" Folio="001" Fecha="2022-07-27T17:07:16" Sello=""
+    NoCertificado="30001000000400002495" Certificado="" FormaPago="01" CondicionesDePago="30 días"
+    SubTotal="508.41" Moneda="USD" TipoCambio="21.00" Total="508.41" TipoDeComprobante="I"
+    MetodoPago="PUE" LugarExpedicion="64000" Exportacion="02">
+
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="AUCHAN COMERCIALIZADORA MEXICANA" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="XEXX010101000" Nombre="Nombre Receptor" DomicilioFiscalReceptor="64000"
+        ResidenciaFiscal="USA" NumRegIdTrib="012345678" RegimenFiscalReceptor="616" UsoCFDI="S01"/>
+
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="SLX667" Cantidad="1100"
+            ClaveUnidad="MTR" Unidad="Metros" Descripcion="Cables" ValorUnitario="0.462190"
+            Importe="508.409" ObjetoImp="01"/>
+    </cfdi:Conceptos>
+
+    <cfdi:Complemento>
+        <cce11:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1"
+            CertificadoOrigen="0" Incoterm="DAP" Subdivision="0"
+            Observaciones="Observaciones ComercioE" TipoCambioUSD="21.00" TotalUSD="508.41">
+
+            <cce11:Emisor>
+
+                <cce11:Domicilio Calle="Juarez" NumeroExterior="1000" Colonia="0001" Localidad="07"
+                    Referencia="NA" Municipio="039" Estado="NLE" Pais="MEX" CodigoPostal="64000"/>
+            </cce11:Emisor>
+
+            <cce11:Receptor NumRegIdTrib="123456789">
+                <cce11:Domicilio Calle="Principal" NumeroExterior="123" NumeroInterior="789"
+                    Colonia="NA" Localidad="Localidad" Referencia="Referencia 001" Municipio="Munic"
+                    Estado="Brazilia" Pais="BRA" CodigoPostal="001-234"/>
+            </cce11:Receptor>
+
+            <cce11:Destinatario NumRegIdTrib="310123170" Nombre="Enterprise">
+                <cce11:Domicilio Calle="Avenue 7" NumeroExterior="200" Colonia="RedWood"
+                    Localidad="RedWood" Estado="TX" Pais="USA" Municipio="Alabama"
+                    CodigoPostal="22222-1234" Referencia="Referencia"/>
+            </cce11:Destinatario>
+            <cce11:Destinatario NumRegIdTrib="310123170" Nombre="Enterprise">
+                <cce11:Domicilio Calle="Avenue 7" NumeroExterior="200" Colonia="RedWood"
+                    Localidad="RedWood" Estado="ON" Pais="CAN" Municipio="Alabama"
+                    CodigoPostal="T0J 0A0" Referencia="Referencia"/>
+            </cce11:Destinatario>
+            <cce11:Destinatario Nombre="Enterprise">
+                <cce11:Domicilio Calle="Libertad" NumeroExterior="200" Colonia="0001" Localidad="07"
+                    Estado="NLE" Pais="MEX" Municipio="039" CodigoPostal="64000"
+                    Referencia="Referencia"/>
+            </cce11:Destinatario>
+
+            <cce11:Mercancias>
+                <cce11:Mercancia NoIdentificacion="SLX667" FraccionArancelaria="3002201000"
+                    CantidadAduana="65.100" UnidadAduana="01" ValorUnitarioAduana="7.81"
+                    ValorDolares="508.41">
+                    <cce11:DescripcionesEspecificas Marca="Marca mercancía" Modelo="Modelo 2021"
+                        SubModelo="SubModelo 2021" NumeroSerie="ABC123AC45"/>
+                </cce11:Mercancia>
+            </cce11:Mercancias>
+
+        </cce11:ComercioExterior>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

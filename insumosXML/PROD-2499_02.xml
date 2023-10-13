@@ -1,0 +1,60 @@
+<cfdi:Comprobante
+  xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos"
+  xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd"
+  Version="4.0"
+  Fecha="2022-12-27T22:51:38"
+  TipoDeComprobante="I"
+  Sello="temporal" Certificado="temporal"
+  NoCertificado="30001000000400002568"
+  SubTotal="23038.40"
+  Total="26441.76"
+  Moneda="MXN"
+  LugarExpedicion="65000"
+  Exportacion="01"
+  FormaPago="01"
+  MetodoPago="PUE"
+>
+  <cfdi:Emisor Rfc="S&amp;S051221SE2" Nombre="S &amp; SOFTWARE S.A DE C.V" RegimenFiscal="601"  />
+  <cfdi:Receptor Rfc="AAQM610917QJA"  UsoCFDI="G03"  Nombre="CARLOS FERNANDO Virtual SANCHEZ"  DomicilioFiscalReceptor="64108"  RegimenFiscalReceptor="612"  />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="80141600"  Cantidad="1"  ClaveUnidad="E48"  Descripcion="COMISIONES DE SEGUROS"  ValorUnitario="21452.67"  Importe="21452.67"  ObjetoImp="02"  NoIdentificacion="111">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="21452.67"  Impuesto="002"  TipoFactor="Tasa"  TasaOCuota="0.160000"  Importe="3432.4272"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <ACuentaTerceros RfcACuentaTerceros="EXT990101NI1" RegimenFiscalACuentaTerceros="616" NombreACuentaTerceros="" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="84111506"  Cantidad="1"  ClaveUnidad="E48"  Descripcion="SEGUROS 3"  ValorUnitario="1300"  Importe="1300"  ObjetoImp="02"  NoIdentificacion="333">
+      <cfdi:Impuestos>
+        <cfdi:Retenciones>
+          <cfdi:Retencion Base="1300"  Impuesto="001"  TipoFactor="Tasa"  TasaOCuota="0.022360"  Importe="29.068"  />
+        </cfdi:Retenciones>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="80141601"  Cantidad="1"  ClaveUnidad="E48"  Descripcion="SEGUROS EXENTO"  ValorUnitario="285.73"  Importe="285.73"  ObjetoImp="02"  NoIdentificacion="222">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="285.73"  Impuesto="002"  TipoFactor="Exento"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosRetenidos="29.07" TotalImpuestosTrasladados="3432.43">
+    <cfdi:Retenciones>
+      <cfdi:Retencion Impuesto="001" Importe="29.07"/>
+    </cfdi:Retenciones>
+    <cfdi:Traslados>
+      <cfdi:Traslado
+        Base="21452.67"
+        Impuesto="002"
+        TipoFactor="Tasa"
+        TasaOCuota="0.160000"
+        Importe="3432.43"
+      />
+      <cfdi:Traslado Base="285.73" Impuesto="002" TipoFactor="Exento"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

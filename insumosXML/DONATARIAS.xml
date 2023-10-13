@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:dvz="http://www.diverza.com/ns/addenda/diverza/1"
+    xmlns:donat="http://www.sat.gob.mx/donat" xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/donat http://www.sat.gob.mx/sitio_internet/cfd/donat/donat11.xsd http://www.diverza.com/ns/addenda/diverza/1 http://www.diverza.com/schema/xsd/Addenda_Diverza_v1.1.xsd"
+    Version="4.0" Serie="B" Fecha="2022-06-17T23:59:59" Sello="" FormaPago="04"
+    NoCertificado="30001000000400002495" Certificado="" SubTotal="6316.06" Moneda="MXN"
+    Total="6316.06" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="77500">
+    <cfdi:InformacionGlobal Periodicidad="01" Meses="06" Año="2022"/>
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="AUCHAN COMERCIALIZADORA MEXICANA" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" DomicilioFiscalReceptor="77500"
+        RegimenFiscalReceptor="616" UsoCFDI="S01"/>
+
+    <cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="6316.06" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000"
+                Importe="0.00"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <donat:Donatarias version="1.1" noAutorizacion="325-SAT-09-IV-E-79413"
+            fechaAutorizacion="2006-12-11"
+            leyenda="Este comprobante ampara un donativo, el cual será destinado por la donataria a los fines propios de su objeto social. En el caso de que los bienes donados hayan sido deducidos previamente para los efectos del impuesto sobre la renta, este donativo no es deducible. La reproducción no autorizada de este comprobante constituye un delito en los términos de las disposiciones fiscales"
+        />
+    </cfdi:Complemento>
+    <cfdi:Addenda>
+        <dvz:diverza version="1.1" xmlns:dvz="http://www.diverza.com/ns/addenda/diverza/1"
+            xsi:schemaLocation="http://www.diverza.com/ns/addenda/diverza/1 http://www.diverza.com/schema/xsd/Addenda_Diverza_v1.1.xsd">
+            <dvz:generales
+                totalConLetra="SEIS MIL TRESCIENTOS DIECISEIS PESOS  06/100 MONEDA NACIONAL"/>
+            <dvz:receptor>
+                <dvz:datosContactoR/>
+            </dvz:receptor>
+            <dvz:complemento>
+                <dvz:datosExtra atributo="6787335"
+                    valor="Este comprobante ampara un donativo, el cual será destinado por la donataria a los fines propios de su objeto social. En el caso de que los bienes donados hayan sido deducidos previamente para los efectos del impuesto sobre la renta, este donativo no es deducible. La reproducción no autorizada de este comprobante constituye un delito en los términos de las disposiciones fiscales"/>
+                <dvz:datosExtra atributo="6787336"
+                    valor="Autorización según oficio: 325-SAT-09-IV-E-79413 de fecha 11 de Diciembre de 2006"/>
+                <dvz:datosExtra atributo="6787337"
+                    valor="FACTURACION DE INGRESOS CORRESPONDIENTE AL 17 de JUNIO de 2022"/>
+                <dvz:datosExtra atributo="6787338"
+                    valor="COMPROBANTE FISCAL QUE AMPARA LOS COMPROBANTES SIMPLIFICADOS EMITIDOS EL 17 de JUNIO de 2022"/>
+                <dvz:datosExtra atributo="6787339"
+                    valor="CODE*AN*DESC*NO IVA TRASLADADO (AN)*BASE*6316.06*IEPS*0.00*IVA*0.00*TOTAL*6316.06*"/>
+                <dvz:datosExtra atributo="6787340"
+                    valor="CODE**DESC*SUMA*BASE*6316.06*IEPS*0.00*IVA*0.00*TOTAL*6316.06*"/>
+                <dvz:datosExtra atributo="asignaFolio" valor="FALSE"/>
+            </dvz:complemento>
+        </dvz:diverza>
+    </cfdi:Addenda>
+</cfdi:Comprobante>

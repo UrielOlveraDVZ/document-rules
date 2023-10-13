@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    xmlns:pago20="http://www.sat.gob.mx/Pagos20" Serie="REP"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd  http://www.sat.gob.mx/Pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd"
+    Version="4.0" Folio="EVZ20220510-110" Fecha="2022-05-19T12:00:00" Sello=""
+    NoCertificado="30001000000400002495" Certificado="" SubTotal="0" Moneda="XXX" Exportacion="01"
+    Total="0" TipoDeComprobante="P" LugarExpedicion="03810">
+    <cfdi:Emisor Nombre="AUCHAN COMERCIALIZADORA MEXICANA" RegimenFiscal="623" Rfc="AAA010101AAA"/>
+    <cfdi:Receptor Rfc="VAHE8209266A1" Nombre="EDUARDO JAVIER VALADEZ HERNANDEZ" DomicilioFiscalReceptor="66055" RegimenFiscalReceptor="612" UsoCFDI="CP01"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago" ValorUnitario="0" Importe="0" ObjetoImp="01"/>
+    </cfdi:Conceptos>
+    <cfdi:Complemento>
+        <pago20:Pagos Version="2.0">
+            <pago20:Totales MontoTotalPagos="231385.72" TotalTrasladosBaseIVAExento="49867.61"
+                TotalTrasladosBaseIVA0="49867.61" TotalTrasladosImpuestoIVA0="0.00" TotalRetencionesIVA="7978.82"
+                TotalTrasladosBaseIVA8="49867.61" TotalTrasladosImpuestoIVA8="3989.41"  
+                TotalTrasladosBaseIVA16="99735.22" TotalTrasladosImpuestoIVA16="15957.64"/>
+            <pago20:Pago FechaPago="2022-05-19T12:00:00" FormaDePagoP="03" MonedaP="MXN"
+                TipoCambioP="1" Monto="231385.72" RfcEmisorCtaBen="BNM840515VB1"
+                CtaBeneficiario="002180002260330177">
+                <pago20:DoctoRelacionado IdDocumento="a592424d-1c53-4aef-8bc7-42ef8596ace2" Folio="1011716895" MonedaDR="MXN" 
+                    EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="57846.43" ImpPagado="57846.43" ImpSaldoInsoluto="0" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:RetencionesDR>
+                            <pago20:RetencionDR BaseDR="49867.6556" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.080000" ImporteDR="3989.412453"/>
+                        </pago20:RetencionesDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="49867.61" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="7978.82"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:DoctoRelacionado IdDocumento="b827121d-4b31-1c53-4aef-89cd9166dae5" Folio="1011716896" MonedaDR="MXN" 
+                    EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="57846.43" ImpPagado="57846.43" ImpSaldoInsoluto="0" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:RetencionesDR>
+                            <pago20:RetencionDR BaseDR="49867.6556" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.080000" ImporteDR="3989.412453"/>
+                        </pago20:RetencionesDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="49867.61" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.080000" ImporteDR="3989.41"/>
+                            <pago20:TrasladoDR BaseDR="49867.61" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.000000" ImporteDR="0.00"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:DoctoRelacionado IdDocumento="a339921a-ab90-4aef-1c53-4b8271218596" Folio="1011716897" MonedaDR="MXN" 
+                    EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="57846.43" ImpPagado="57846.43" ImpSaldoInsoluto="0" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="49867.61" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="7978.82"/>
+                            <pago20:TrasladoDR BaseDR="49867.61" ImpuestoDR="003" TipoFactorDR="Tasa" TasaOCuotaDR="0.080000" ImporteDR="3989.41"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:DoctoRelacionado IdDocumento="db81102a-bc1b-1de4-2b3a-6a908b776c12" Folio="1011716898" MonedaDR="MXN" 
+                    EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="57846.43" ImpPagado="57846.43" ImpSaldoInsoluto="0" ObjetoImpDR="02">
+                    <pago20:ImpuestosDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR BaseDR="49867.61" ImpuestoDR="002" TipoFactorDR="Exento"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+                <pago20:ImpuestosP>
+                    <pago20:RetencionesP>
+                        <pago20:RetencionP ImpuestoP="002" ImporteP="7978.825"/><!-- 7978.824906 -->
+                    </pago20:RetencionesP>
+                    <pago20:TrasladosP>
+                        <pago20:TrasladoP BaseP="49867.61" ImpuestoP="002" TipoFactorP="Exento"/>
+                        <pago20:TrasladoP BaseP="49867.61" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.000000" ImporteP="0.00"/>
+                        <pago20:TrasladoP BaseP="49867.61" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.080000" ImporteP="3989.41"/>
+                        <pago20:TrasladoP BaseP="99735.22" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.160000" ImporteP="15957.64"/>
+                        <pago20:TrasladoP BaseP="49867.61" ImpuestoP="003" TipoFactorP="Tasa" TasaOCuotaP="0.080000" ImporteP="3989.41"/>
+                    </pago20:TrasladosP>
+                </pago20:ImpuestosP>
+            </pago20:Pago>
+        </pago20:Pagos>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

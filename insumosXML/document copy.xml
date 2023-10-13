@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="001" Fecha="2022-10-13T11:18:47" Sello="Tfbyi1+6agkpbAhNiLDGTxhdFpJwqCwXv1VMplEld4pqdyLzOh3p9XSK2ou5/DFA5yPsCxqPpYHcz1DRCYyS+xcrDJcmvVrVqHBqu535zXnVZGGGc7DjmsUF/HrmijY7ajHC38DqzVy9FeRN203mW4JrNdgy0DAtWWKBICdx6DSET5Zbx1IKB8e4559kFaUHE0BUzPwwaV2Zdg626JzyDVqNXSRCG3H+vTeRGANuLTpZ52IlD+P3IyD++Q7TfrWp5ScQs52c/Q72hO4qLGxv9QyqDe+3W0OGAt/vtpeVNKTcmKEhGxJ60a2zd5/oQMalCUr2xKTwKcra4uM++EWD4Q==" FormaPago="01" NoCertificado="30001000000400002321" Certificado="MIIFijCCA3KgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDIzMjEwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNTI5MTcxNzQwWhcNMjMwNTI5MTcxNzQwWjCBsTEdMBsGA1UEAxMUS0FSTEEgRlVFTlRFIE5PTEFTQ08xHTAbBgNVBCkTFEtBUkxBIEZVRU5URSBOT0xBU0NPMR0wGwYDVQQKExRLQVJMQSBGVUVOVEUgTk9MQVNDTzEWMBQGA1UELRMNRlVOSzY3MTIyOFBINjEbMBkGA1UEBRMSRlVOSzY3MTIyOE1DTE5MUjA1MR0wGwYDVQQLExRLQVJMQSBGVUVOVEUgTk9MQVNDTzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALcigR0/27nsBVgrbB/neBsY7R3cRvR3Ka9w4ovRtpN2pe62A5dfew7eNaaXQESF/bcbaq/bI9VuI5NJqxx0QVIRRn+pAJb53PsMVVAj81JoPUislh0AlxuMHhI8TxpGmwrVU+PejfuQ49wqfQsOnqYAuHi0PvvzE/N2Ja32+yEOMzE40B0OqoBO2t93I+he+/THXhijEKeeSO4s+kgNBUKvZNqu/00Rrqu5DjfFLFHCwqBQraym1xlSBt7C3m8nGsPbn/R0BMypfSZPSuQJNxDX0W3+zhlKrnFMMQWEHgMJ75kQPIhHLN+/MKUe3j75ViDL6ejupN/DO/AtYHcMtPsCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBACdpf+YqxKhVyH/nTxnZHTbg4BzMoCrC5NXKU4XUvZ37/E1fzqLIcLaNZUIwdwhKw5qQrNIbn0AEtWA/PIHUeAffoJOMWklNlGMOeXlX6PmAF692ywISLxhy7Nt9aLYIr4yT6P8a8zR9em0B6guW3BudSNKIui+FpTYNmCpttSPfJ07lvYY1VYvGwAqwnAzWUWHqoh1S6Y+qKxvUAw6Cj3n3A1iQiWqrCFBeaoe2iw050jTRT/THx4qIGAqQJSYiO+z5xjiUxTnxZBj7ZGAjjNITg+AEnqEnyYUnjhRLq38BlJTvaPrAmXuisJV8YGvwvuyrBG/eSZqnLf1MkD2Z5aX2L2blmvUxpTSUw9kz2scXUVUBiBiW3AXztrtM5Dyg3O/vGdFOPh1f9CNuzDCgbUAe2ifIyPYtJKAmicMatc279+Z14MpqpsWkgvHHPE2D8tlsnnrIs5eT+ghKhOtQKCXrwv7khTU3szJOjTFvANy6V6iiEswABn4fbKVwK3XbwwtWa9oMFj4hHVi6LAz9ze8R36MFq+O6ERIlVqD/sVcypU2mEEjqRypP8lu6qO6oUo1lt91TqqBLjFz1dIN9B4o+vpikUlCJldOSvhHNtwmg/lgepxR9P2RYJhH5xz+6tlM1/Fs9SAYY52g6nqMmxcddfMNQKp15u0DW5ue+4F5m" CondicionesDePago="30 días" SubTotal="10000.00" Total="10800.00" Moneda="MXN" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000">
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="109b5475-4889-45b9-8d25-d1bf7e2446f6" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-10-13T11:18:48" SelloCFD="Tfbyi1+6agkpbAhNiLDGTxhdFpJwqCwXv1VMplEld4pqdyLzOh3p9XSK2ou5/DFA5yPsCxqPpYHcz1DRCYyS+xcrDJcmvVrVqHBqu535zXnVZGGGc7DjmsUF/HrmijY7ajHC38DqzVy9FeRN203mW4JrNdgy0DAtWWKBICdx6DSET5Zbx1IKB8e4559kFaUHE0BUzPwwaV2Zdg626JzyDVqNXSRCG3H+vTeRGANuLTpZ52IlD+P3IyD++Q7TfrWp5ScQs52c/Q72hO4qLGxv9QyqDe+3W0OGAt/vtpeVNKTcmKEhGxJ60a2zd5/oQMalCUr2xKTwKcra4uM++EWD4Q==" NoCertificadoSAT="30001000000400002495" SelloSAT="D/Jr+c0SlWzHlqZxi/XmSEYAzCBUJZFGKKydPR2JQYGO3uGTaEhZL6e1zCLkbVCL/qvpwzRUJSN2ATJDwMC7L8QK6L9Tu0Zur3l31/wnunGpgsJbDLBQ2+edtqkaIqlhFZSmDzfO5/1QqZEPU0RwB4Oh8cU91mNLAmGUkNIxGeq/80yvdbjQO+D0Krl09DRpS3Ul0dY4YBeCTEXr+2zviCamw9iacFN0FLfNM8HX54m3MMzwIoDT7SdnffGIXXVFzebz+oHBG8/SNGX2jOU1baOmk06wL7Nubcvz9hO1NKtftk18FC3zOFdlcN4vknYbJktEdOeb1d+y8rRY4D9ZQQ=="/>
+  </cfdi:Complemento>  
+  <cfdi:CfdiRelacionados>
+    <cfdi:CfdiRelacionado/>
+  </cfdi:CfdiRelacionados>  
+  <cfdi:Emisor Rfc="FUNK671228PH6" Nombre="KARLA FUENTE NOLASCO" RegimenFiscal="612"/>
+  <cfdi:Receptor Rfc="AAQM610917QJA" Nombre="CARLOS FERNANDO Virtual SANCHEZ" DomicilioFiscalReceptor="64108" RegimenFiscalReceptor="612" UsoCFDI="G01"/>
+  <cfdi:Conceptos>
+      <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="5000.000000" Importe="5000.000000" ObjetoImp="02">
+          <cfdi:Impuestos>
+              <cfdi:Traslados>
+                  <cfdi:Traslado Base="5000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="800.00"/>
+              </cfdi:Traslados>
+          </cfdi:Impuestos>
+      </cfdi:Concepto>
+      <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="5000.000000" Importe="5000.000000" ObjetoImp="02">
+          <cfdi:Impuestos>
+              <cfdi:Traslados>
+                  <cfdi:Traslado Base="5000.00" Impuesto="002" TipoFactor="Exento"/>
+              </cfdi:Traslados>
+          </cfdi:Impuestos>
+      </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="800.00">
+      <cfdi:Traslados>
+          <cfdi:Traslado Base="5000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="800.00"/>
+      </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/CartaPorte20 http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte20.xsd"
+    Version="3.3" Fecha="2020-06-11T09:00:00" Serie="ABC" Folio="105" Sello="" FormaPago="99"
+    NoCertificado="30001000000400002495" Certificado="" SubTotal="100000.00" Moneda="MXN"
+    Total="116000.00" TipoDeComprobante="T" MetodoPago="PUE" LugarExpedicion="64000">
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="AAA SA DE CV" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="AAA010101AAA" Nombre="Ventas al mostrador" UsoCFDI="G03"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="78101701" Cantidad="1" ClaveUnidad="E48"
+            Descripcion="Servicio de traslado vía marítima" ValorUnitario="100000.00" Importe="100000.00" NoIdentificacion="123A" Unidad="Servicios">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="100000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16000.00"/>
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="16000.00">
+        <cfdi:Traslados>
+            <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16000.00"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <leyendasFisc:LeyendasFiscales xmlns:leyendasFisc="http://www.sat.gob.mx/leyendasFiscales"/>
+        <implocal:ImpuestosLocales xmlns:implocal="http://www.sat.gob.mx/implocal"/>
+        <cartaporte20:CartaPorte Version="2.0" TranspInternac="No">
+            
+            <cartaporte20:Ubicaciones>
+                <cartaporte20:Ubicacion TipoUbicacion="Origen" IDUbicacion="OR000001" RFCRemitenteDestinatario="XEXX010101000" NombreRemitenteDestinatario="Nombre Remitente Extranjero"
+                    NumRegIdTrib="123456789" ResidenciaFiscal="USA" NumEstacion="PM019" NombreEstacion="Puerto Escondido"
+                    NavegacionTrafico="Cabotaje" FechaHoraSalidaLlegada="2021-11-08T18:13:51" TipoEstacion="01">
+                    <cartaporte20:Domicilio Calle="Las tortugas" NumeroExterior="102" NumeroInterior="2" Colonia="3214" Localidad="08" Referencia="15.853640, -97.062535" Municipio="318" Estado="OAX" Pais="MEX" CodigoPostal="71983"/>
+                </cartaporte20:Ubicacion>
+                
+                <cartaporte20:Ubicacion TipoUbicacion="Destino" IDUbicacion="DE000001" RFCRemitenteDestinatario="MISC491214B86" NombreRemitenteDestinatario="Nombre Destinatario 001"
+                    NumEstacion="PM054" NombreEstacion="Puerto Vallarta" NavegacionTrafico="Cabotaje" FechaHoraSalidaLlegada="2021-11-09T18:13:51" TipoEstacion="03">
+                    <cartaporte20:Domicilio Calle="Flamingos" NumeroExterior="28" NumeroInterior="1" Colonia="0900"
+                        Localidad="06" Referencia="No Aplica" Municipio="015" Estado="DIF" Pais="MEX" CodigoPostal="06300"/>
+                </cartaporte20:Ubicacion>
+            </cartaporte20:Ubicaciones>
+            
+            <cartaporte20:Mercancias PesoBrutoTotal="16200.000" UnidadPeso="KGM" PesoNetoTotal="200.000" NumTotalMercancias="1">
+                
+                <cartaporte20:Mercancia BienesTransp="25101505" Descripcion="Minivans o vans" Cantidad="3.000000" ClaveUnidad="XVN"
+                    Unidad="Vehículo" PesoEnKg="16200.000" ValorMercancia="900000.000000" Moneda="MXN">
+                    <!--<cartaporte20:CantidadTransporta Cantidad="50.000000" IDOrigen="OR000000" IDDestino="DE000000" CvesTransporte="01"/>-->
+                    <cartaporte20:DetalleMercancia UnidadPesoMerc="KGM" PesoBruto="16200.000" PesoNeto="200.000" PesoTara="16000.000" NumPiezas="3"/>
+                </cartaporte20:Mercancia>             
+                
+                <cartaporte20:TransporteMaritimo PermSCT="TPTM01" NumPermisoSCT="0X2XTXZ0X5X0X3X2X1X0" NombreAseg="Nombre Aseguradora" NumPolizaSeguro="154647"
+                    TipoEmbarcacion="B07" Matricula="501A1Z8" NumeroOMI="IMO8657489" AnioEmbarcacion="2020" NombreEmbarc="Nombre Embarcacion"
+                    NacionalidadEmbarc="MEX" UnidadesDeArqBruto="200.023" TipoCarga="CGC" NumCertITC="00X00X00X85"
+                    Eslora="190.05" Manga="48.24" Calado="15.66" LineaNaviera="Linea Naviera 001" NombreAgenteNaviero="Nombre AgenteNaviero 001"
+                    NumAutorizacionNaviero="SCT418/014/2017" NumViaje="65248" NumConocEmbarc="84595">
+                    <cartaporte20:Contenedor MatriculaContenedor="TAPBLC00000" TipoContenedor="CM006" NumPrecinto="5398745"/>
+                </cartaporte20:TransporteMaritimo>
+
+                <cartaporte20:TransporteFerroviario TipoDeServicio="" TipoDeTrafico="">
+                    <cartaporte20:Carro ToneladasNetasCarro="2">
+                        <!-- <cartaporte20:Contenedor TipoContenedor="" PesoContenedorVacio="" PesoNetoMercancia="1000" />
+                        <cartaporte20:Contenedor TipoContenedor="" PesoContenedorVacio="" PesoNetoMercancia="1000" /> -->
+                    </cartaporte20:Carro>
+
+                </cartaporte20:TransporteFerroviario>
+
+            </cartaporte20:Mercancias>
+            
+            <cartaporte20:FiguraTransporte>
+                
+                <cartaporte20:TiposFigura TipoFigura="04" RFCFigura="PUUJ841226AF5" NombreFigura="Nombre Notificado">
+                </cartaporte20:TiposFigura>
+                
+            </cartaporte20:FiguraTransporte>
+        </cartaporte20:CartaPorte>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

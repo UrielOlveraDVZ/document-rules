@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos"
+    xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI"
+    xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd"
+    Version="4.0" Serie="TRAS" Folio="001" Fecha="2021-12-20T08:13:51" Sello=""
+    NoCertificado="30001000000400002495" Certificado="" SubTotal="0" 
+    Total="0" Moneda="USD" TipoCambio="21.00" TipoDeComprobante="T" Exportacion="02" LugarExpedicion="64000">
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="AUCHAN COMERCIALIZADORA MEXICANA" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="XEXX010101000" Nombre="Nombre Receptor" DomicilioFiscalReceptor="64000"
+        RegimenFiscalReceptor="616" UsoCFDI="S01" NumRegIdTrib="123456789" ResidenciaFiscal="USA"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="SLX667" Cantidad="0.001"
+            ClaveUnidad="MTR" Unidad="01" Descripcion="Cables" ValorUnitario="100.00" Importe="0.10" ObjetoImp="01"/>
+        <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="QWERTY" Cantidad="0.001"
+            ClaveUnidad="MTR" Unidad="01" Descripcion="Cables" ValorUnitario="100.00" Importe="0.10" ObjetoImp="01"/>
+        <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ABCD" Cantidad="0.001"
+            ClaveUnidad="MTR" Unidad="01" Descripcion="Cables" ValorUnitario="100.00" Importe="0.10" ObjetoImp="01"/>
+    </cfdi:Conceptos>
+    <cfdi:Complemento>
+        <cce11:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1"
+            CertificadoOrigen="0" Incoterm="DAP" Subdivision="0" TipoCambioUSD="21.00" TotalUSD="0.30" MotivoTraslado="02">
+            <cce11:Emisor>
+                <cce11:Domicilio Calle="Juarez" NumeroExterior="1000" Colonia="0001" Localidad="07"
+                    Referencia="NA" Municipio="039" Estado="NLE" Pais="MEX" CodigoPostal="64000"/>
+            </cce11:Emisor>
+            <cce11:Receptor NumRegIdTrib="123456789">
+                <cce11:Domicilio Calle="Avenue 7" NumeroExterior="200" Colonia="RedWood" Estado="NV" Pais="USA" CodigoPostal="45678"/>
+            </cce11:Receptor>
+            <cce11:Destinatario NumRegIdTrib="3101231707" Nombre="Enterprise">
+                <cce11:Domicilio Calle="Principal" NumeroExterior="123" NumeroInterior="789"
+                    Colonia="NA" Localidad="Cd. de Panamá" Referencia="Referencia 001"
+                    Municipio="Cd. de Panamá" Estado="Ciudad de Panamá" Pais="PAN" CodigoPostal="0"/>
+            </cce11:Destinatario>
+            <cce11:Mercancias>
+                <cce11:Mercancia NoIdentificacion="SLX667" FraccionArancelaria="3002201000" ValorDolares="0.10">
+                    <cce11:DescripcionesEspecificas Marca="NA Marca 1" Modelo="NA Modelo 1" SubModelo="NA SubModelo 1" NumeroSerie="NA NumSerie 1"/>
+                </cce11:Mercancia>
+                <cce11:Mercancia NoIdentificacion="QWERTY" FraccionArancelaria="3002201000" ValorDolares="0.10">
+                    <cce11:DescripcionesEspecificas Marca="NA Marca 2" Modelo="NA Modelo 2" SubModelo="NA SubModelo 2" NumeroSerie="NA NumSerie 2"/>
+                </cce11:Mercancia>
+                <cce11:Mercancia NoIdentificacion="ABCD" FraccionArancelaria="3002201000" ValorDolares="0.10">
+                    <cce11:DescripcionesEspecificas Marca="NA Marca 3" Modelo="NA Modelo 3" SubModelo="NA SubModelo 3" NumeroSerie="NA NumSerie 3"/>
+                </cce11:Mercancia>
+            </cce11:Mercancias>
+        </cce11:ComercioExterior>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

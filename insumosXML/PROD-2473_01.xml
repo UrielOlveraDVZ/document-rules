@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante Version="4.0" xmlns:bfa2="http://www.buzonfiscal.com/ns/addenda/bf/2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd"
+    Exportacion="01" MetodoPago="PPD" Moneda="MXN" FormaPago="99" LugarExpedicion="64710"
+    TipoDeComprobante="I" SubTotal="46579.41" Total="39846.79" Descuento="12228.73" Folio="93700676"
+    Serie="ZCG09" Fecha="2022-11-30T17:04:58"
+    Sello="RiQNwEyjbeIUeDP5JQERInjnRchx4VWGov3yed+p/MPQBjU1eaf36NqNUWSTCmYcqCYQr97ZXH+P12JgxOnDqqA/8KLow6cjPcKnxDy64eNwR4BdyPVrv70EKIaa6tTaYVJh4q84IrkHh4c1XXi5+llEFLbEfEbUjtDswKT0wdeqWUUcB5GYWGPr5RYfiKMP9BSBGm75xrRNG3/ETr0bIPqcTMorTBdxpOoB1zi3ktoKNPAEmF82lupGcAbgPA66fX1CKh9nr0miMlcidylBcH/a/z+86eAkVUL8k1GJNjGRPmLJDHlMPcxLoYxNxPwd6SmxM6LhIvqmgjKN3M/S+A=="
+    Certificado="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"
+    NoCertificado="00001000000505788565">
+    <cfdi:Emisor Nombre="FUNDACION SANTOS Y DE LA GARZA EVIA" Rfc="FSG7712283P5" RegimenFiscal="603"/>
+    <cfdi:Receptor Nombre="MAPFRE MEXICO" Rfc="MTE440316E54" RegimenFiscalReceptor="601"
+        DomicilioFiscalReceptor="03800" UsoCFDI="G03"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto Importe="46579.41" ValorUnitario="46579.4100"
+            Descripcion="SERVICIOS HOSPITALARIOS DE EMERGENCIA O QUIRÚRGICOS"
+            ClaveProdServ="85101501" Cantidad="1.00" Descuento="12228.73" ClaveUnidad="C62"
+            ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Importe="5496.1100" TasaOCuota="0.160000" Impuesto="002"
+                        TipoFactor="Tasa" Base="34350.68"/>
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="5496.11">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="34350.68" Importe="000005496.11" TasaOCuota="0.160000"
+                Impuesto="002" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"
+            xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"
+            Version="1.1" UUID="b8de6a54-4797-4c52-b6de-fa743cd37400" RfcProvCertif="SNF171020F3A"
+            FechaTimbrado="2022-11-30T17:05:14"
+            SelloCFD="RiQNwEyjbeIUeDP5JQERInjnRchx4VWGov3yed+p/MPQBjU1eaf36NqNUWSTCmYcqCYQr97ZXH+P12JgxOnDqqA/8KLow6cjPcKnxDy64eNwR4BdyPVrv70EKIaa6tTaYVJh4q84IrkHh4c1XXi5+llEFLbEfEbUjtDswKT0wdeqWUUcB5GYWGPr5RYfiKMP9BSBGm75xrRNG3/ETr0bIPqcTMorTBdxpOoB1zi3ktoKNPAEmF82lupGcAbgPA66fX1CKh9nr0miMlcidylBcH/a/z+86eAkVUL8k1GJNjGRPmLJDHlMPcxLoYxNxPwd6SmxM6LhIvqmgjKN3M/S+A=="
+            NoCertificadoSAT="00001000000414211380"
+            SelloSAT="HTEGQNIYPEws5wRR5ayFO/pGeo7MkNN2h7OArPweK2ptaxUv8B+fsLnHiV4B6Jxya9oNvwbyorOiEJWG6Iipkh5g/qPCIZb+786lTiKH0Tf+096tmglXi3KufcD9Jyzsgw4nzrCzbJSDqzZZ3EBgGol9Zq3RUO4OrZ0RGhj4ldHjWh0f9Ft+1gt8M25j7zDhJyRkSsAdNfEkcf9uxw+PqidyhnETzQLBa+3Z2PpEBzt+QtoEgkp+Mg66yr5uYh+fnag36M9+ycVCXf91zb+4++GQZn+YW4rsKWq785kRIKOatLtAGXh5eYvX3QlfYAJKyb311RMjmggLLuSfTfjh/Q=="
+        />
+    </cfdi:Complemento>
+    <cfdi:Addenda>
+        <AddendaBuzonFiscal xmlns="http://www.buzonfiscal.com/ns/addenda/bf/2" version="4.0">
+            <TipoDocumento descripcion="Factura" nombreCorto="FAC"/>
+            <Receptor noCliente="0002000002"/>
+            <Destino nombre="RUIZ NEIRA ANTONIO FERNANDO" estado="" municipio="Correo :"
+                calle="BLVD. PUERTA DEL SOL 201" claveIdentificacion="4000480136"/>
+            <CFD totalConLetra="TREINTA Y NUEVE MIL OCHOCIENTOS CUARENTA Y SEIS PESOS (79/100) M.N."/>
+            <Extra valor="12:00:00 a. m." atributo="FechaIngreso"/>
+            <Extra valor="12:00:00 a. m." atributo="HoraIngreso"/>
+            <Extra valor="2002892175" atributo="Episodio"/>
+            <Extra valor="08/02/1950" atributo="FechaNacimiento"/>
+            <Extra valor="Facturo" atributo=""/>
+            <Extra valor="PRIMO MIGUEL DELGADO GARZON" atributo="Nombre del Doctor"/>
+            <Extra valor="46579.41" atributo="SubtotalGravado"/>
+            <Extra valor="46579.41" atributo="TotalServicios"/>
+            <Extra valor="34350.68" atributo="Subtotal1"/>
+            <Extra valor="7452.71" atributo="Iva1"/>
+            <Extra valor="39846.79" atributo="Total1"/>
+            <Extra valor="34350.68" atributo="Subtotal2"/>
+            <Extra valor="-1956.60" atributo="Iva2"/>
+            <Extra valor="-14185.33" atributo="Total2"/>
+            <Extra valor="5496.11" atributo="IVAParcial"/>
+        </AddendaBuzonFiscal>
+    </cfdi:Addenda>
+</cfdi:Comprobante>
